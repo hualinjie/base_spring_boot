@@ -25,7 +25,7 @@ public class IndexController {
     @Resource
     private IUser userService;
 
-    @RequestMapping("/")
+    @RequestMapping("/index")
     public String index(ModelMap modelMap){
         modelMap.addAttribute("host", "HELLO DOCKER WORLD");
         return "index";
